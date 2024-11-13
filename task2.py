@@ -31,3 +31,13 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math
+n = float(input("Enter a number: "))
+if n/2 == int(n/2) and math.sqrt(n) == int(math.sqrt(n)):
+    print(f"{n} is both a perfect square and divisible by two")
+elif n/2 == int(n/2):
+    print(f"{n} is divisible by 2 but is not a perfect square")
+elif math.sqrt(n) == int(math.sqrt(n)):
+    print(f"{n} is a perfect square but is not divisible by 2")
+else:
+    print(f"{n} is neither a perfect square nor divisible by 2")

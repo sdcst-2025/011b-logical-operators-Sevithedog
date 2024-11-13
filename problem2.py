@@ -26,3 +26,9 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+x = int(input("Enter an integer: "))
+y = int(input("Enter an integer: "))
+if max(x,y)/ min(x,y) == int(max(x,y)/min(x,y)):
+    print(f"{min(x,y)} is a factor of {max(x,y)}")
+else:
+    print(f"{min(x,y)} is a factor of {max(x,y)}")
