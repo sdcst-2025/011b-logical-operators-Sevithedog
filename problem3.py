@@ -38,6 +38,10 @@ z = int(input("Enter an integer: "))
 
 c = max(x,y,z)
 a = min(x,y,z)
-b = median(x,y,z)
+b = statistics.median([x,y,z])
 print(f"{a}, {b}, {c}")
+if c**2 == a**2 + b**2:
+    print(f"{a}, {b}, {c} form a Pythagogrean triple")
+else:
+    print(f"{a}, {b}, {c} do not form a Pythagorean triple")
 
